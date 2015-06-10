@@ -32,7 +32,7 @@ IntercomMeteor.shutdown();
 IntercomMeteor.open();
 
 // Open the Intercom messenger to a new message.
-IntercomMeteor.openNew();
+IntercomMeteor.openNewMessage();
 
 // Close the Intercom messenger.
 IntercomMeteor.close();

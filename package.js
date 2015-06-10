@@ -1,6 +1,6 @@
 Package.describe({
   name: 'dispatch:intercom',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Intercom for meteor.'
 });
 

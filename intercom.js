@@ -64,7 +64,7 @@ IntercomMeteor.open = function () {
 /**
  * Open the Intercom messenger to a new message.
  */
-IntercomMeteor.openNew = function () {
+IntercomMeteor.openNewMessage = function () {
   if (!window.Intercom) throw new Meteor.Error('Intercom javascript library has not been loaded.');
   if (!_booted) throw new Meteor.Error('Intercom has not been booted');
 
