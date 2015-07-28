@@ -11,6 +11,10 @@ Package.onUse(function (api) {
   ], 'web');
 
   api.addFiles([
+    // Intercom javascript library
+    'lib/intercom.js',
+
+    // Package helper functions
     'intercom.js'
   ], 'web');
 
