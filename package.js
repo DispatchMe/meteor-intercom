@@ -1,6 +1,6 @@
 Package.describe({
   name: 'dispatch:intercom',
-  version: '1.0.2',
+  version: '2.0.0',
   summary: 'Intercom for meteor.'
 });
 
@@ -11,9 +11,6 @@ Package.onUse(function (api) {
   ], 'web');
 
   api.addFiles([
-    // Intercom javascript library
-    'lib/intercom.js',
-
     // Package helper functions
     'intercom.js'
   ], 'web');
