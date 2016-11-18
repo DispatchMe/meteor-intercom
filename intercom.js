@@ -87,3 +87,18 @@ IntercomMeteor.close = function () {
 IntercomMeteor.isOpen = function () {
   return $('#intercom-messenger').hasClass('intercom-messenger-active');
 };
+
+
+/**
+ * Calling the update method with a JSON object of user details will update those fields on the 
+ * current user in addition to logging an impression at the current URL and looking for new 
+ * messages for the user.
+ * @param options
+ *        options.* Any property sent will be used for tracking.
+ */
+IntercomMeteor.update = function (options) {
+  if (!window.Intercom) throw new Meteor.Error('Intercom javascript library has not been loaded.');
+  if (!_booted) throw new Meteor.Error('Intercom has not been booted');
+  
+  window.Intercom('update', options);
+};
